@@ -1,4 +1,5 @@
 # МНОГОСЛОЙНАЯ СЕТЬ
+
 # загрузим библиотеки
 from tensorflow.keras.datasets import fashion_mnist
 from tensorflow.keras.layers import Dense
@@ -9,6 +10,7 @@ def load_train(path):
     features_train = np.load(path + 'train_features.npy')
     target_train = np.load(path + 'train_target.npy')
     features_train = features_train.reshape(features_train.shape[0], 28 * 28) / 255.
+    
     return features_train, target_train
     
 # функция создания модели
