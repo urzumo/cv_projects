@@ -1,4 +1,4 @@
-# SGD
+# SGD pytorch
 
 import torch
 import numpy as np
